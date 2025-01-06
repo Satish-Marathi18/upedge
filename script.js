@@ -23,3 +23,10 @@ rightArrow.addEventListener('click', () => {
 
 // Initialize the first card
 showCard(currentIndex);
+
+const viewImgBtn = document.getElementById('view-btn')
+viewImgBtn.onclick = function () {
+  // Navigate to another page
+  window.location.href = "./college.html";
+};
+
