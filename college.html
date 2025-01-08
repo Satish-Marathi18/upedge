@@ -10,11 +10,24 @@
   <div class="nav-bar">
     <p id="logo"><a href="index.html">UP<span id="text2">EDGE</span></a></p>
     <div class="nav-select">
-        <div id="about">About</div>
+        <div id="about"><a href="#">About</a></div>
         <div id="course"><a href="courses.html">Course</a></div>
-        <div id="college">College</div>
-        <div id="enroll">Enroll Now</div>
+        <div id="college"><a href="college.html">College</a></div>
+        <div id="enroll"><a href="enroll.html">Enroll Now</a></div>
     </div>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="overlay-content">
+      <span class="close-btn" id="closeOverlay">&times;</span>
+      <div class="nav-select-overlay">
+        <div id="about"><a href="#">About</a></div>
+        <div id="course"><a href="courses.html">Course</a></div>
+        <div id="college"><a href="college.html">College</a></div>
+        <div id="enroll"><a href="enroll.html">Enroll Now</a></div>
+      </div>
+  </div>
 </div>
     <div class="customer-base">
         <h1>Our customer base</h1>
@@ -40,4 +53,13 @@
         </div>
       </div>
 </body>
+<script>
+  document.getElementById("menuIcon").addEventListener("click", function () {
+    document.getElementById("overlay").style.display = "flex";
+  });
+  
+  document.getElementById("closeOverlay").addEventListener("click", function () {
+    document.getElementById("overlay").style.display = "none";
+  });
+</script>
 </html>

@@ -1,0 +1,253 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.nav-bar {
+    height: 5rem;
+    background: linear-gradient(to right, #F93827, #e66706);
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    color: #FFD65A;
+    margin-left: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#about, #course, #college, #enroll {
+  height: 2.5rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#course:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#college:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#enroll:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+
+/* Overlay styles */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay-content {
+  color: white;
+  text-align: center;
+}
+
+.nav-select-overlay {
+  display: flex;
+  flex-direction: column; /* Stack the options vertically */
+  gap: 45px; /* Add spacing between options */
+}
+
+.nav-select-overlay div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-size: 22px;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+#text2 {
+    color: white;
+}
+
+.nav-select {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+    width: 100%;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.line {
+    width: 5rem;
+    height: 0rem;
+    border-top: 0.2rem solid #F93827;
+    border-bottom: 0.2rem solid #F93827;
+    border-radius: 10%;
+    margin-left: 3rem;
+}
+
+/* Form container */
+.form-container {
+    width: 35%;
+    margin: 50px auto;
+    background: linear-gradient(to bottom, #F93827, #e66706);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading */
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Inputs and textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 25%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color: #FFD65A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 36%;
+}
+
+.submit-btn:hover {
+    background-color: #fcc92f;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 120vw;
+  }
+
+  #logo {
+    margin-left: 2rem;
+  }
+
+  .nav-select {
+    display: none;
+  }
+
+  .nav-select {
+    display: none; /* Hide the navigation options */
+}
+.menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: -50px; /* Align the menu icon to the right side */
+    top: 23px; /* Adjust vertical positioning */
+}
+
+#about:active {
+  background-color: #F93827;
+}
+
+#course:active {
+  background-color: #F93827;
+}
+
+#college:active {
+  background-color: #F93827;
+}
+
+#enroll:active {
+  background-color: #F93827;
+}
+
+.form-container {
+  width: 80%;
+  margin: 50px auto;
+  background: linear-gradient(to bottom, #F93827, #e66706);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+}

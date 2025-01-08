@@ -23,6 +23,87 @@ a {
   color: inherit;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#about, #course, #college, #enroll {
+  height: 2.5rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#course:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#college:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#enroll:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+
+/* Overlay styles */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay-content {
+  color: white;
+  text-align: center;
+}
+
+.nav-select-overlay {
+  display: flex;
+  flex-direction: column; /* Stack the options vertically */
+  gap: 45px; /* Add spacing between options */
+}
+
+.nav-select-overlay div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-size: 22px;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
 #text2 {
     color: white;
 }
@@ -60,37 +141,6 @@ a {
     font-size: small;
 }
 
-#about, #course, #college, #enroll {
-    height: 2.5rem;
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#course:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#college:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#enroll:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
 
 .body {
     background: linear-gradient(to top, #F93827, #e66706);
@@ -264,6 +314,7 @@ a {
     background-color: #ffffff;
   }
   
+  
   /* Testimonial Cards */
   .testimonials {
     display: flex;
@@ -379,10 +430,11 @@ a {
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
+    margin-left: 15%;
   }
   
   .section-title span {
-    color: #6d5dfc;
+    color: #ffd700;
   }
   
   .team-testimonial-slider {
@@ -427,11 +479,11 @@ a {
   blockquote {
     font-size: 18px;
     margin: 10px 0;
-    color: #c4cdd5;
+    color: white;
   }
   
   .quote-symbol {
-    color: #6d5dfc;
+    color: #FFD65A;
     font-size: 24px;
   }
   
@@ -445,7 +497,7 @@ a {
   }
   
   .arrow {
-    background-color: #6d5dfc;
+    background-color: #ffd700;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -456,7 +508,7 @@ a {
   }
   
   .arrow:hover {
-    background-color: #5a4ac4;
+    background-color: #d29b03;
   }
 
 /* college image slider */
@@ -676,6 +728,35 @@ h1 {
       display: none;
     }
 
+    .nav-select {
+      display: none; /* Hide the navigation options */
+  }
+
+  #about:active {
+    background-color: #F93827;
+  }
+  
+  #course:active {
+    background-color: #F93827;
+  }
+  
+  #college:active {
+    background-color: #F93827;
+  }
+  
+  #enroll:active {
+    background-color: #F93827;
+  }
+  
+  .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      right: -50px; /* Align the menu icon to the right side */
+      top: 23px; /* Adjust vertical positioning */
+  }
+
     .options {
       display: flex;
       flex-direction: column;
@@ -759,10 +840,46 @@ h1 {
       order: 1;
     }
 
-    .about-section p, h1 {
+    .about-section h1 {
       width: 22rem;
+      font-size: 35px;
+    }
+    .about-section p {
+      width: 22rem;
+      text-align: left;
     }
 
+
+    /* services */
+
+    .team-testimonial-section {
+      text-align: center;
+      padding: 5px 1px;
+      background: linear-gradient(to top, #F93827, #e66706);
+      color: #ffffff;
+    }
+
+    .team-testimonial-image {
+      width: 50%;
+      margin-left: 0;
+    }
+
+    .team-testimonial-image img {
+      height: 85%;
+      width: 200%;
+    }  
+
+    .team-testimonial-content {
+      margin-left: 20%;
+      margin-right: 0;
+    }
+
+    blockquote {
+      font-size: 16px;
+      margin: 2px 0;
+      color: white;
+    }
+    
     /* college images slider */
    
     

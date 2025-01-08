@@ -21,6 +21,92 @@ body {
     margin-left: 4rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#about, #course, #college, #enroll {
+  height: 2.5rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#course:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#college:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+#enroll:active {
+  background-color: white;
+  color:#F93827;
+  border-radius: 15px;
+}
+
+
+/* Overlay styles */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay-content {
+  color: white;
+  text-align: center;
+}
+
+.nav-select-overlay {
+  display: flex;
+  flex-direction: column; /* Stack the options vertically */
+  gap: 45px; /* Add spacing between options */
+}
+
+.nav-select-overlay div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-size: 22px;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
 #text2 {
     color: white;
 }
@@ -34,43 +120,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: white;
-}
-
-#about, #course, #college, #enroll {
-  height: 2.5rem;
-  width: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#about:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#course:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#college:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
-}
-
-#enroll:active {
-    background-color: white;
-    color:#F93827;
-    border-radius: 15px;
 }
   
   .customer-base {
@@ -115,3 +164,48 @@ a {
     display: block;
     margin: 0 auto;
   }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      padding: 0;
+      width: 120vw;
+    }
+
+    #logo {
+      margin-left: 2rem;
+    }
+
+    .nav-select {
+      display: none;
+    }
+
+    .nav-select {
+      display: none; /* Hide the navigation options */
+  }
+
+  #about:active {
+    background-color: #F93827;
+  }
+  
+  #course:active {
+    background-color: #F93827;
+  }
+  
+  #college:active {
+    background-color: #F93827;
+  }
+  
+  #enroll:active {
+    background-color: #F93827;
+  }
+  
+  .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      right: -50px; /* Align the menu icon to the right side */
+      top: 23px; /* Adjust vertical positioning */
+  }
+}

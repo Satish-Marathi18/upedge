@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+    <!-- <div class="line"></div> -->
+    <div class="nav-bar">
+        <p id="logo"><a href="index.html">UP<span id="text2">EDGE</span></a></p>
+        <div class="nav-select">
+            <div id="about"><a href="#">About</a></div>
+            <div id="course"><a href="courses.html">Course</a></div>
+            <div id="college"><a href="college.html">College</a></div>
+            <div id="enroll"><a href="enroll.html">Enroll Now</a></div>
+        </div>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+          <span class="close-btn" id="closeOverlay">&times;</span>
+          <div class="nav-select-overlay">
+            <div id="about"><a href="#">About</a></div>
+            <div id="course"><a href="courses.html">Course</a></div>
+            <div id="college"><a href="college.html">College</a></div>
+            <div id="enroll"><a href="enroll.html">Enroll Now</a></div>
+          </div>
+      </div>
+  </div>
+    <div class="form-container">
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age*</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender*</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Course*</label>
+                <input type="text" id="course" name="course" placeholder="Enter your course" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address*</label>
+                <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="enroll.js">
+    
+</script>
+</html>

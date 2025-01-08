@@ -30,3 +30,11 @@ viewImgBtn.onclick = function () {
   window.location.href = "./college.html";
 };
 
+document.getElementById("menuIcon").addEventListener("click", function () {
+  document.getElementById("overlay").style.display = "flex";
+});
+
+document.getElementById("closeOverlay").addEventListener("click", function () {
+  document.getElementById("overlay").style.display = "none";
+});
+
